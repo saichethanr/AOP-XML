@@ -21,6 +21,9 @@ dependencies {
 	implementation 'org.springframework:spring-context:6.1.14'
 	implementation 'org.springframework:spring-aop:5.3.30'
 	implementation 'org.aspectj:aspectjweaver:1.9.19'
+	implementation 'io.opentelemetry:opentelemetry-api:1.32.0'
+	implementation 'io.opentelemetry:opentelemetry-sdk:1.32.0'
+	implementation 'io.opentelemetry:opentelemetry-exporter-otlp:1.32.0'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 

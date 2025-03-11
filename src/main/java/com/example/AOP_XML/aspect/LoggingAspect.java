@@ -2,6 +2,8 @@ package com.example.AOP_XML.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+
 
 public class LoggingAspect {
     public void beforeAdvice(JoinPoint joinPoint){
