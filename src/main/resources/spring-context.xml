@@ -20,4 +20,12 @@
             <aop:around method="aroundAdvice" pointcut-ref="allMethods"/>
         </aop:aspect>
     </aop:config>
+
+
+    <aop:config>
+        <aop:aspect ref="tracingAspect">
+            <aop:pointcut id="allMethods" expression="execution(* com.example.AOP_XML.service.*.*(..))"/>
+            <aop:around method="traceMethod" pointcut-ref="allMethods"/>
+        </aop:aspect>
+    </aop:config>
 </beans>
